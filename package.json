@@ -1,0 +1,45 @@
+{
+  "name": "symbolic-json",
+  "version": "0.1.0",
+  "description": "Support non-standard symbolic link json parsing.",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "main": "lib/symbolic-json.js",
+  "scripts": {
+    "test": "mocha test/**/*.js --require test/index.js",
+    "test-watch": "npm run test -- --watch",
+    "lint": "esw lib/ test/",
+    "lint-watch": "npm run lint -- --watch",
+    "cover": "istanbul cover  -x \"**example/**\" ./node_modules/mocha/bin/_mocha -- test/**/*.js --require test/index.js",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- test/**/*.js --require test/index.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "do-publish": "npm run test && npm run lint && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Celest/symbolic-json.git"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "json",
+    "symbolic",
+    "parse"
+  ],
+  "author": "Jon West <jon.c.west@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Celest/symbolic-json/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^3.0.1",
+    "eslint-watch": "^2.1.13",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0"
+  },
+  "homepage": "https://github.com/Celest/symbolic-json#readme"
+}

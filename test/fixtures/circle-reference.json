@@ -1,0 +1,6 @@
+{
+    "string": "bar",
+    "int": 123,
+    "bool": true,
+    "linked": __circle-reference.json
+}

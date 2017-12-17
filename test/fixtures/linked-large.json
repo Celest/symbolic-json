@@ -1,0 +1,11 @@
+{
+    "linked": __simple.json,
+    "text": __simple.txt,
+    "html": __simple.html,
+    "json_linked": __linked-json.json,
+    "json_html": __linked-html.json,
+    "json_text": __linked-text.json,
+    "html_chunk": __chunk.html,
+    "json_chunk": __chunk.json,
+    "text_chunk": __chunk.txt
+}
